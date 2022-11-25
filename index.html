@@ -52,7 +52,7 @@
     <!-- секция 1 с фото рекламы -->
     <section class="deskription overlay">
       <div class="containet">
-        <h1 class="deskription-title">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="deskription-title">Ефективні рішення для<br> вашого бізнесу</h1>
         <button type="button" class="deskription-button link" data-modal-open>Замовити послугу</button>
       </div>
     </section>
@@ -333,43 +333,68 @@
           </div>
         </div>
         <div class="form-telegram">
-<h2 class="attach-title">Підпишіться на розсилку</h2>
+          <h2 class="attach-title">Підпишіться на розсилку</h2>
           <form class="telegram" action="">
-            <input class="telegram-input" type="email" name="mail" id="mail" placeholder="E-mail" >
+            <input class="telegram-input" type="email" name="mail" id="mail" placeholder="E-mail">
             <button class="telegram-btn" type="button">Підписатися
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </div>
     <!-- </section> -->
   </footer>
+  <!-- MODAL -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close class="btn-modal">
         <svg class="modal-icon">
           <use href="./images/sprite.svg#close"></use>
-          </svg></button>
+        </svg></button>
       <div>
         <form class="modal-form" action="">
-          <p>Залиште свої дані, ми вам передзвонимо</p>
-          <label for="name">Ім'я</label>
-          <input type="text" name="name" id="name">
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
-          <label for="email">Пошта</label>        
-          <input type="email" name="email" id="email">
-          <label for="comment">Коментар</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-<input type="checkbox" name="politic" id="politic">
-<label for="politic">Погоджуюся з розсилкою та приймаю <a href="#"> Умови договору</a></label>
-<button type="submit">Відправити</button>
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form-fild" >
+            <label for="name">Ім'я </label>
+            <input class="form-input" type="text" name="name" id="name" > 
+            <svg class="form-icon"> 
+                <use href="./images/sprite.svg#man"></use>
+            </svg>
+
+          </div>
+          <div class="form-fild">
+            <label for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel">
+            <svg class="form-icon"> 
+              <use href="./images/sprite.svg#tel"></use>
+          </svg>
+          </div>
+          <div class="form-fild">
+            <label for="email">Пошта</label>
+            <input class="form-input" type="email" name="email" id="email">
+            <svg class="form-icon"> 
+              <use href="./images/sprite.svg#email"></use>
+          </svg>
+          </div>
+          <div class="form-comment">
+            <label for="comment">Коментар</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+          </div>
+          <div class="politic">
+            <label class="politic-label" for="politic">
+             <input class="politic-checkbox" type="checkbox" name="politic" id="politic">
+             <span class="politic-icon"></span>
+          Погоджуюся з розсилкою та приймаю  <a href="#"> Умови договору</a>
+        </label>
+        </div>
+        <div>
+          <button class="form-button link" type="submit">Відправити</button></div>
         </form>
       </div>
-        
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
