@@ -12,6 +12,7 @@
   --color-icon-primary: #afb1b8;
   --color-attach-bg: rgba(255, 255, 255, 0.1);
   --time-cube: cubic-bezier(0.4, 0, 0.2, 1);
+  --back-accent-color:#188ce8;
 }
 
 body {
@@ -196,7 +197,7 @@ margin-right: 10px;
 
 .page-header {
   border-bottom: 1px solid var(--color-border-header);
-}													  
+}
 /* блок майн */
 /* блок секция */
 /* Deskription */
@@ -260,14 +261,12 @@ margin-right: 10px;
   cursor: pointer;
   text-align: center;
   transition: background-color 250ms var(--time-cube);
-  
-
 }
 
 .deskription-button:hover,
-.deskription-button:focus{
-  background-color: #188CE8;
-}						  
+.deskription-button:focus {
+  background-color:var(--back-accent-color);
+}
 /* цвет заголовков всех секций */
 .section-title {
   color: var(--title-text-color);
@@ -284,7 +283,6 @@ margin-right: 10px;
 }
 
 /* feature */
-
 
 .feature-list p {
   margin: 0;
@@ -399,6 +397,7 @@ margin-right: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
 }
 
 .about-list p {
@@ -502,6 +501,7 @@ margin-right: 10px;
 .holder {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-logo {
   display: inline-block;
@@ -559,9 +559,7 @@ margin-right: 10px;
   margin-top: 9px;
 }
 
-.attach {
-  margin-left: 70px;
-}
+
 
 .attach-title {
   color: var(--white-color);
@@ -589,43 +587,39 @@ margin-right: 10px;
 .attach-social-link:focus {
   background-color: var(--accent-color);
 }
- /* fgfhgfjdfjklgdjfjkdfgjfdjdfjkvndfbndfgjkdfvbjkdfnbvjdfbjkfdbnd */
 
-.form-telegram {
-   margin-left: 93px;
-}
+
 .telegram input {
-  background-color:transparent;
+  background-color: transparent;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-display:inline-block;
-align-items: center;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-padding-top: 15px;
-padding-left: 16px;
-padding-bottom: 15px;
-margin-right: 12px;
-outline: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color:var(--text-link-footer);
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  outline: transparent;
 }
-.telegram input:focus{
-  border-color:rgba(255, 255, 255, 0.6);
+.telegram input:focus {
+  border-color:var(--text-link-footer);
 }
-.telegram-btn{
-
-display:inline-flex;
+.telegram-btn {
+  display: inline-flex;
   min-width: 200px;
   height: 50px;
-padding:10px 28px;
+  padding: 10px 28px;
   box-shadow: var(--color-box-shadow);
   border-radius: 4px;
-    border-color: transparent;
+  border-color: transparent;
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -633,22 +627,20 @@ padding:10px 28px;
   line-height: 1.88;
   cursor: pointer;
   text-align: left;
- align-items: center;
- justify-content: space-around;
- transition: background-color 250ms var(--time-cube);
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 250ms var(--time-cube);
 }
-.telegram-btn .icon{
- 
+.telegram-btn .icon {
   fill: currentColor;
   width: 24px;
   height: 24px;
- 
 }
 
 .telegram-btn:hover,
-.telegram-btn:focus{
-  background-color: #188CE8;
- }
+.telegram-btn:focus {
+  background-color:var(--back-accent-color);
+}
 /* sjgerhglkhdgkldklfgndjklvberghgwoe;hgp;ergvn;dgneosrgnbfjksdgrgsegbusoedgvboudrgbheuorbho */
 /* PORTFOLIO */
 .portfolio-box {
@@ -789,14 +781,7 @@ background-color:  rgba(33, 150, 243, 0.5);
   letter-spacing: 0.03em;
 }
 
-
-
-
-
-
 /* MODAL */
-
-
 
 .backdrop {
   position: fixed;
@@ -808,7 +793,6 @@ background-color:  rgba(33, 150, 243, 0.5);
   transition: opacity 250ms var(--time-cube);
   opacity: 1;
   visibility: visible;
-  
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -833,7 +817,6 @@ background-color:  rgba(33, 150, 243, 0.5);
   transition: opacity 250ms var(--time-cube);
   opacity: 1;
   visibility: visible;
- 
 }
 
 .btn-modal {
@@ -862,52 +845,50 @@ background-color:  rgba(33, 150, 243, 0.5);
 .btn-modal:focus {
   color: var(--accent-color);
 }
-.modal-form{
+.modal-form {
   padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color:var(--primary-text-color);
-  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
-.modal-form h2{
-
+.modal-form h2 {
   font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
-margin-top: 0;
-margin-bottom: 12px;
-padding: 0;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0;
 }
 
-.form-fild{
+.form-fild {
   position: relative;
-    display: flex;
+  display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
- .form-input{
-
+.form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-width: 448px;
-height: 40px;
-margin-top: 4px;
-padding-left: 42px;
-transition: border-color 250ms var(--time-cube);
- }
+  border-radius: 4px;
+  font-size: 14px;
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms var(--time-cube);
+}
 
- .form-icon{
+.form-icon {
   position: absolute;
- display: inline-block;
-    fill: currentColor;
+  display: inline-block;
+  fill: currentColor;
   width: 18px;
   height: 18px;
   list-style: none;
@@ -917,92 +898,84 @@ transition: border-color 250ms var(--time-cube);
 }
 
 .form-input:focus,
-.form-comment textarea:focus{
-outline: none;
-  border-color:var(--accent-color);
-  
+.form-comment textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
-.form-input:focus+.form-icon{
-  color: #188CE8;
+.form-input:focus + .form-icon {
+  color:var(--back-accent-color);
 }
 
-
-
-
- .form-comment{
+.form-comment {
   display: flex;
   flex-direction: column;
   margin: 0;
-
- }
- .form-comment textarea{
+}
+.form-comment textarea {
   margin-top: 4px;
   width: 448px;
-height: 120px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-padding: 12px 16px;
-resize: none;
-transition: border-color 250ms var(--time-cube);
- }
- .form-comment::placeholder{
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition: border-color 250ms var(--time-cube);
+}
+.form-comment::placeholder {
   font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
-color: rgba(117, 117, 117, 0.5);
-
- }
- .politic{
-
+  color: rgba(117, 117, 117, 0.5);
+}
+.politic {
   display: inline-flex;
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color:var(--primary-text-color);
- }
- .politic a{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.politic a {
   margin-left: 4px;
   color: var(--accent-color);
-  text-underline-position:under;
-  }
+  text-underline-position: under;
+}
 
- .politic label{
-   display: flex;
+.politic label {
+  display: flex;
   align-items: center;
   cursor: pointer;
- }
+}
 
- .politic-checkbox{
+.politic-checkbox {
   appearance: none;
   position: absolute;
 }
 
-.politic-icon{
+.politic-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
-   border: 2px solid var(--title-text-color);
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 7px;
 }
-.politic-checkbox:checked +.politic-icon{
+.politic-checkbox:checked + .politic-icon {
   padding-top: 1px;
-background-color:#2196F3;
-background-image: url(../images/Vector.svg);
-background-repeat: no-repeat;
-background-size: contain;
-background-origin:content-box;
-border-color: #2196F3;
+  background-color: #2196f3;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  border-color: #2196f3;
 }
 
-
- .form-button {
+.form-button {
   display: inline-block;
   min-width: 200px;
   box-shadow: var(--color-box-shadow);
@@ -1018,19 +991,13 @@ border-color: #2196F3;
   cursor: pointer;
   text-align: center;
   transition: background-color 250ms var(--time-cube);
- }
+}
 
 .form-button:hover,
-.form-button:focus{
-  background-color: #188CE8;
-}		
-
-
-
-
-
+.form-button:focus {
+  background-color:var(--back-accent-color);
+}
 
 /* sdggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
- /* transform: scale(0) rotate(360deg);
+/* transform: scale(0) rotate(360deg);
   transition: all 250ms var(--time-cube); */
-
