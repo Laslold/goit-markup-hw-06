@@ -20,7 +20,11 @@ body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
 }
-
+h3,
+p{
+  margin: 0;
+  padding: 0;
+}
 .link {
   text-decoration: none;
   color: inherit;
@@ -388,7 +392,8 @@ margin-right: 10px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin: 30px 0 0 0;
+  margin-bottom: 10px;
+  /* margin: 30px 0 0 0; */
 }
 .about-list .item {
   display: flex;
@@ -400,9 +405,13 @@ margin-right: 10px;
   background-color: var(--white-color);
 }
 
-.about-list p {
-  margin: 10px 0 30px 0;
+.about-wrapper{
+padding-top: 30px;
+padding-bottom: 16px;
 }
+/* .about-list p {
+  margin: 10px 0 30px 0;
+} */
 
 .about-list .item + .item {
   margin-left: 30px;
